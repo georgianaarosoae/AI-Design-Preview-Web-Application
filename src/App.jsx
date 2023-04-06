@@ -8,6 +8,8 @@ function App() {
   const [piece, setPiece] = useState("");
   const [description, setDescription] = useState("");
   const [result, setResult] = useState([]);
+
+  
   const submitForm = async () => {
     const requestedData = {
       prompt: `logo for a ${piece} destined to ${sex} with ${description}`,
