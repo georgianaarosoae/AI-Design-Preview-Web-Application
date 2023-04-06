@@ -1,0 +1,127 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30b11f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #237b17;
+}
+
+@font-face {
+  font-family: "DM Sans Regular";
+  src: url('../public/fonts/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "DM Sans Bold";
+  src: url('../public/fonts/DMSans-Bold.ttf') format('truetype');
+}
+
+body {
+  background-color: #000000;
+  font-family: "DM Sans Regular";
+  color: #ffffff;
+  height: 937px;
+}
+
+#text1 {
+  position: absolute;
+  left: 5%;
+  top: 50px;
+  font-size: 50px;
+  font-family: "DM Sans Bold";
+}
+
+#sex{
+  position: absolute;
+  left: 5%;
+  top: 200px;
+  font-size: 20px;
+  border: none;
+}
+
+#piece {
+  position: absolute;
+
+  /*aici*/
+  left: 15%;
+  /*aici*/
+
+  top: 200px;
+  font-size: 20px;
+}
+
+#designinput {
+  position: absolute;
+  left: 5%;
+  top: 250px;
+  font-size: 20px;
+
+  /*aici*/
+  width: 400px;
+  /*aici*/
+
+  color: #383838;
+}
+
+#submit {
+  position: absolute;
+  left: 5%;
+  top: 300px;
+  font-size: 20px;
+  width: 200px;
+  color: #ffffff;
+  background-color: #30b11f;
+  font-family: "DM Sans Bold";
+  border: none;
+}
+
+#submit:hover {
+  background-color: #237b17;
+}
+
+#imageOutput {
+  position: absolute;
+  left: 5%;
+  top: 375px;
+  width: 512px;
+  height: 512px;
+  border: none;
+  pointer-events: none;
+}
+
+
+@media screen and (max-width: 545px) {
+  body {
+      height: 2000px;
+  }
+
+  #sex {
+      top: 250px;
+  }
+
+  #piece {
+      top: 250px;
+  }
+
+  #designinput {
+      top: 300px;
+  }
+
+  #submit {
+      top: 350px;
+  }
+
+  #imageOutput {
+      top: 425px;
+      width: 85%;
+      height: auto;
+  }
+}
